@@ -6,5 +6,5 @@ type RenderFullXlsxRequest struct {
 }
 
 type RenderFullXlsxResponse struct {
-	Payload string `json:"payload" binding:"required"`
+	Payload []byte `json:"payload" binding:"required"`
 }

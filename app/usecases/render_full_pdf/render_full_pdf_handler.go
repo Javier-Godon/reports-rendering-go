@@ -10,6 +10,7 @@ import (
 	config "github.com/Javier-Godon/reports-rendering-go/framework"
 	pb_system "github.com/Javier-Godon/reports-rendering-go/proto/get_cpu_system_usage"
 	pb_user "github.com/Javier-Godon/reports-rendering-go/proto/get_cpu_user_usage"
+	// render_xlsx "github.com/Javier-Godon/reports-rendering-go/render/xlsx"
 	
 	proto "github.com/Javier-Godon/reports-rendering-go/proto"
 )
@@ -55,6 +56,9 @@ func (handler RenderFullPdfHandler) Handle(query RenderFullPdfQuery) (RenderFull
 
 	//  Create a list of JSON strings.
 	dataListJSON := []string{systemUsageJSON, userUsageJSON}
+
+
+	// render_xlsx.CpuSystemUsageReport()
 
 	//  Do something with dataListJSON (e.g., return it, log it, etc.).
 	fmt.Printf("Data: %v\n", dataListJSON)
