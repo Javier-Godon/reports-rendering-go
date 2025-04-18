@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "fa0e45c5-d55d-4a4f-bb6d-f025f11dfff6",
+		"name": "reports-rendering_go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11424667"
+	},
+	"item": [
+		{
+			"name": "kubernetes",
+			"item": [
+				{
+					"name": "RenderXlsx Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date_from\": 1708023223,\n    \"date_to\": 1739645623\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/render/xlsx/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"render",
+								"xlsx",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RenderXlsx",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date_from\": 1708023223,\n    \"date_to\": 1739645623\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8899/render/xlsx/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8899",
+					"path": [
+						"render",
+						"xlsx",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RenderPdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date_from\": 1708023223,\n    \"date_to\": 1739645623\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8899/render/pdf/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8899",
+					"path": [
+						"render",
+						"pdf",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
